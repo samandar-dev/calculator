@@ -54,6 +54,7 @@ function addResult() {
   let output = (eval(elOutput.innerHTML));
   elOutput.textContent = output;
 }
+
 elDeletOne.addEventListener("click", () => {
   let num = elOutput.innerHTML.split('').pop()
   if (num == '-' || num == '+' || num == '/' || num == '*') {
@@ -85,14 +86,13 @@ elDeletOne.addEventListener("click", () => {
 // tan.addEventListener("click", () => {
 //   elOutput.innerHTML = Math.tan(elOutput.innerHTML);
 // })
-
-f_x_.addEventListener("click", () => {
-  let temp = 1;
-  for (let i = 1; i <= elOutput.innerHTML; i++) {
-    temp *= i;
-  }
-  elOutput.innerHTML = temp;
-})
+// f_x_.addEventListener("click", () => {
+//   let temp = 1;
+//   for (let i = 1; i <= elOutput.innerHTML; i++) {
+//     temp *= i;
+//   }
+//   elOutput.innerHTML = temp;
+// })
 
 btn4.addEventListener('click', () => {
   elOutput.innerHTML = '';
